@@ -3,7 +3,7 @@
 Bem-vindo ao repositório do Teste de Vaga. Nesta aplicação, utilizei as seguintes tecnologias:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DevJoaoPeu/teste-vaga/3d078b5143d32ff711e4ab14ae1cce1d83e18963/public/captura02.png" width="400" height="auto" alt="Descrição da imagem 1">
+  <img src="https://raw.githubusercontent.com/DevJoaoPeu/teste-vaga/3d078b5143d32ff711e4ab14ae1cce1d83e18963/public/captura01.png" width="400" height="auto" alt="Descrição da imagem 1">
   <img src="https://raw.githubusercontent.com/DevJoaoPeu/teste-vaga/3d078b5143d32ff711e4ab14ae1cce1d83e18963/public/captura02.png" width="400" height="auto" alt="Descrição da imagem 2">
 </p>
 
