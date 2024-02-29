@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Teste de Vaga - Aplicação de Listagem de Carros
 
-## Getting Started
+Bem-vindo ao repositório do Teste de Vaga. Nesta aplicação, utilizei as seguintes tecnologias:
 
-First, run the development server:
+- **React/Next.js**: Para construção da aplicação de página única e renderização no lado do servidor.
+- **TypeScript**: Para adicionar tipagem estática ao JavaScript, tornando o código mais robusto e escalável.
+- **Tailwind CSS**: Um framework de utilitários CSS de baixo nível para construção rápida e eficiente de interfaces modernas.
+
+## Estrutura do Projeto
+
+- **`/pages`**: Contém os arquivos da aplicação, como `index.tsx` (página principal) e outros arquivos de rota.
+- **`/components`**: Armazena componentes React reutilizáveis, como `ListCars.tsx` e `Rating.tsx`.
+- **`/public`**: Diretório padrão para arquivos estáticos, como imagens.
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/DevJoaoPeu/teste-vaga.git
+```
+
+2. Instale as dependências:
+
+```bash
+cd teste-vaga
+npm install
+```
+
+3. Execute a aplicação:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Código
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **`/pages/index.tsx`**: Página principal que utiliza a listagem de carros.
+- **`/components/ListCars.tsx`**: Componente de listagem de carros.
+- **`/components/Rating.tsx`**: Componente de avaliação.
 
-## Learn More
+- <a href="https://teste-vaga.vercel.app/">Link do deploy</a>
 
-To learn more about Next.js, take a look at the following resources:
+## Dados Fictícios
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Os dados dos carros são definidos no arquivo `ListCars.ts` como um array de objetos. Cada objeto representa um carro com informações como nome, ano, disponibilidade e avaliação.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contribuindo
 
-## Deploy on Vercel
+Sinta-se à vontade para contribuir com melhorias ou correções. Faça um fork do repositório, crie um branch, e envie um pull request.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Agradeço por considerar o Teste de Vaga! 🚗💻
