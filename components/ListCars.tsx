@@ -38,7 +38,7 @@ export const listCars: PropsList[] = [
     name: "Mini Cooper 2023",
     imageUrl: "https://github.com/DevJoaoPeu/teste-vaga/blob/develop/public/miniCooper.jpg?raw=true",
     reservation: "",
-    status: true,
+    status: false,
     rating: 5,
   },
   {
@@ -54,7 +54,7 @@ export const listCars: PropsList[] = [
     name: "X2 2023",
     imageUrl: "https://github.com/DevJoaoPeu/teste-vaga/blob/develop/public/x2.jpg?raw=true",
     reservation: "",
-    status: true,
+    status: false,
     rating: 3,
   },
 ];
