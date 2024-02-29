@@ -2,6 +2,11 @@
 
 Bem-vindo ao repositório do Teste de Vaga. Nesta aplicação, utilizei as seguintes tecnologias:
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DevJoaoPeu/teste-vaga/3d078b5143d32ff711e4ab14ae1cce1d83e18963/public/captura02.png" width="400" height="auto" alt="Descrição da imagem 1">
+  <img src="https://raw.githubusercontent.com/DevJoaoPeu/teste-vaga/3d078b5143d32ff711e4ab14ae1cce1d83e18963/public/captura02.png" width="400" height="auto" alt="Descrição da imagem 2">
+</p>
+
 - **React/Next.js**: Para construção da aplicação de página única e renderização no lado do servidor.
 - **TypeScript**: Para adicionar tipagem estática ao JavaScript, tornando o código mais robusto e escalável.
 - **Tailwind CSS**: Um framework de utilitários CSS de baixo nível para construção rápida e eficiente de interfaces modernas.
