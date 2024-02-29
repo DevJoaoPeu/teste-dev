@@ -1,3 +1,5 @@
+import { listCars } from "@/components/ListCars";
+import { Ratings } from "@/components/Rating";
 import Image from "next/image";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
@@ -26,24 +28,35 @@ export default function Home() {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-190 ">
-            <tr>
-              <td className="flex items-center gap-4 px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-                <Image src="https://github.com/DevJoaoPeu/teste-vaga/blob/develop/public/bmw.jpg?raw=true" width={70} height={70} alt="img1" />
-                <span>Audi tt</span>
-              </td>
-              <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-               11/07
-              </td>
-              <td className="px-7 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-               <span className="p-1.5 bg-green-200 text-green-700 rounded-md font-bold">Available</span>
-              </td>
-              <td className="px-7 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-               <span>Estrelas</span>
-              </td>
-              <td className="px-[3rem] py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
-               <BsThreeDotsVertical />
-              </td>
-            </tr>
+            {listCars.map((item) => (
+              <tr>
+                <td className="flex items-center gap-4 px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
+                  <Image
+                    src={item.imageUrl}
+                    width={70}
+                    height={70}
+                    alt="img1"
+                  />
+                  <span>{item.name}</span>
+                </td>
+                <td className="px-6 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
+                  {item.reservation}
+                </td>
+                <td className="px-7 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
+                    <span className={item.status ? `p-1.5 bg-green-200 text-green-700 rounded-md font-bold`: `p-1.5 bg-red-200 text-red-700 rounded-md font-bold`}>
+                      {item.status ? "Available": "Unavailable"}
+                    </span>
+                </td>
+                <td className="px-7 py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
+                  <span>
+                    <Ratings totalStars={item.rating} />
+                  </span>
+                </td>
+                <td className="px-[3rem] py-4 text-sm font-medium text-gray-900 whitespace-nowrap">
+                  <BsThreeDotsVertical />
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
